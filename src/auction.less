@@ -124,14 +124,19 @@
 
       //下拉菜单
       .dropdown-menu {
-        a {
+        padding: 3px 0px;
+        .dropdown-item {
           color: #595961;
           font-size: 12px;
           padding: 5px 15px;
+          margin: 3px 0;
 
-          &:hover {
+          &:hover{
             background-color: #F2F2F6;
           }
+        }
+        .dropdown-item.active {
+          background-color: #F2F2F6;
         }
       }
 
