@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import DragChange from './dragAndChange/dragAndChange'
-import Drag from './dragAPI/drag'
+import {Main} from './main'
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 ReactDOM.render(
   //严格模式
   <React.StrictMode> 
-    <DragChange />
-    <Drag />
+    <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );

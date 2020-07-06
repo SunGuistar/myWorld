@@ -1,0 +1,140 @@
+//主界面
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 10px 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px 0 rgba(200, 200, 200, 0.5);
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 50px;
+
+  //头部活动信息
+  .head {
+    display: flex;
+    height: 66px;
+    width: auto;
+    padding: 0px 10px;
+    .headTitle {
+      margin: auto 10px;
+      font-size: 14px;
+    }
+  }
+
+  // 列表
+  .mainList {
+    margin: 0px 10px;
+    flex: 1;
+    background-color:#F2F2F6;
+    border-radius: 6px;
+    overflow-x: hidden;
+
+    // 列表头
+    .listHead {
+      display: flex;
+      margin: 10px 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      height: 50px;
+      
+      .button-blue {
+        margin: auto 0px;
+        margin-left: 20px;
+        border-color: #2589ff;
+        color :#2589ff;
+      }
+    }
+  }
+
+  // 底部翻页
+  .foot {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    width: 100%;
+    box-shadow: 0 2px 10px 0 rgba(15, 12, 70, 0.16);
+    height: 60px;
+    border-radius: 10px 10px 0px 0px;
+    background-color:#fff;
+
+    //左侧信息栏
+    .pageNumber {
+      margin: auto 15px;
+      font-size: 12px;
+    }
+  }
+
+  //一般按钮
+  .auction-button {
+    display: flex;
+    height: 30px;
+    width: 85px;
+    box-shadow: none;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #e3e2e5;
+    font-size: 12px;
+
+    //按钮内容居中
+    span {
+      margin: auto;
+    }
+  }
+
+
+  //一般下拉按钮
+  .auction-dropdown {
+    margin: auto 10px;
+
+    //覆盖组件的原有样式
+    .btn-primary:not(:disabled):not(.disabled):active {
+      border: 1px solid #e3e2e5;
+      color: #595961;
+      background-color:#fff;
+    }
+
+    button{
+      width: 85px;
+      height: 30px;
+      border-radius: 4px;
+      font-size: 12px;
+      border: 1px solid #e3e2e5;
+      color: #595961;
+      background-color:#fff;
+    }
+
+    //下拉时
+    .show {
+      button {
+        border:1px solid #2589ff;
+        color: #595961;
+        background-color:#fff;
+
+        &:after {
+          border-top: 0;
+          border-bottom: .3em solid;
+        }
+      }
+
+      //下拉菜单
+      .dropdown-menu {
+        a {
+          color: #595961;
+          font-size: 12px;
+          padding: 5px 15px;
+
+          &:hover {
+            background-color: #F2F2F6;
+          }
+        }
+      }
+
+    }
+  }
+}
